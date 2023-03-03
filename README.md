@@ -1,2 +1,1 @@
-# portfolio_personal_website
-My personal website
+My personal website showing my profile and key projects
