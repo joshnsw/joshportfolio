@@ -11,22 +11,23 @@
 </head>
 <body>
   <section class="d-flex justify-content-end">
-  <nav class="p-5 rounded-pill mt-3 w-50 decoration-nav">
-    <a href="" >About</a>
-    <a href="">Projects</a>
-    <a href="">Contact</a>
+  <nav class="p-5 rounded-pill mt-3 w-50 decoration-nav d-flex  justify-content-end text-center mx-5">
+
+    <a href="#project" class="mr-5 text-center">Projects</a>
+    <a href="#about" class="mr-5">About</a>
+    <a href="https://www.linkedin.com/in/joshuang443/">Contact</a>
   </nav>
 </section>
 
 <section class="first-section">
-  <div class="container bg-light rounded">
+  <div class="container rounded">
     <div class="row p-4">
       <div class="col">
-        <img src="assets/joshprofile.jpeg" style="height:400px" >
+        <img src="assets/joshprofile.jpeg" style="height:400px" class="rounded">
       </div>
 
-      <div class="col">
-       <p>Hi I'm Joshua, a singaporean working in Tokyo.
+      <div class="col text-white p-4">
+       <p>Hi I'm Joshua, a Singaporean working in Tokyo.
        </p>
        <p>Software skillset:
         React, Ruby on Rails, Bootstrap
@@ -38,9 +39,9 @@
       <p>Contact me @
       </p>
       <div>
-        <a href="https://www.linkedin.com/in/joshuang443/" target="_blank" style= "text-decoration: none; color:black" ><i class="fa-brands fa-linkedin"></i>Linkedin </a>
+        <a href="https://www.linkedin.com/in/joshuang443/" target="_blank" style= "text-decoration: none; color:white" ><i class="fa-brands fa-linkedin"></i>Linkedin </a>
 
-        <a href="https://github.com/joshnsw" target="_blank" style= "text-decoration: none; color:black" ><i class="fa-brands fa-square-github"></i> Github</a>
+        <a href="https://github.com/joshnsw" target="_blank" style= "text-decoration: none; color:white" ><i class="fa-brands fa-square-github"></i> Github</a>
       </div>
       </div>
     </div>
@@ -48,19 +49,20 @@
 
 </section>
 
-<section class="second-section mt-5">
-  <div class="container bg-light rounded">
-    <h1>Projects</h1>
+<section class="second-section mt-5" id="project">
+  <div class="container text-center rounded">
+    <h1 class="text-light">Projects</h1>
     <div class="row p-4 d-flex">
 
 
       <div class="col">
         <div class="card card-format p-3">
-          <span> Menta Check</span>
-          <p> A web application that allows the user to save monitor his daily mental health.</p>
+          <span> <b>Menta Check</b></span>
+          <p> A web application that allows the user to monitor his daily mental health.</p>
           <p> <i class="fas fa-desktop"></i> React,Node Express,MongoDB</p>
 
-          <a href="https://mentacheck.onrender.com/" target="_blank">View Project</a>
+          <a href="https://mentacheck.onrender.com/" target="_blank">Project</a>
+          <a href="https://github.com/joshnsw/mentacheck/tree/master" target="_blank">Github</a>
         </div>
       </div>
 
@@ -68,11 +70,12 @@
 
       <div class="col">
           <div class="card card-format p-3">
-          <span>React Redux Website</span>
+          <span><b>React Redux Website</b></span>
 
           <p>I created a mock gym website that has a online store, using React for frontend and Redux for the backend.</p>
           <p> <i class="fas fa-desktop"></i> React,Redux</p>
-          <a href="https://joshnsw.github.io/reactreduxwebsite/" target="_blank">View Project</a>
+          <a href="https://joshnsw.github.io/reactreduxwebsite/" target="_blank">Project</a>
+          <a href="https://github.com/joshnsw/reactreduxwebsite/tree/gh-pages" target="_blank">Github</a>
           </div>
 
       </div>
@@ -83,21 +86,49 @@
 
       <div class="col">
         <div class="card card-format p-3">
-          <span>Chirp Vault</span>
+          <span><b>Chirp Vault</b></span>
           <p>A web application that allows you to save your tweets in a collection.</p>
           <p><i class="fas fa-desktop"></i> Node Express,Twitter API</p>
-          <a href="https://tweetapi-joshnsw.onrender.com" target="_blank">View Project</a>
+          <a href="https://chirpvault.herokuapp.com/" target="_blank">Project</a>
+          <a href="https://github.com/joshnsw/tweetapi" target="_blank">Github</a>
         </div>
       </div>
 
         <div class="col">
           <div class="card card-format p-3">
-            <span>  Project Funding Prediction</span>
+            <span><b>Project Funding Prediction</b> </span>
             <p> A data science application that was created to allow project managers to predict their funding requirements for each project.</p>
             <p><i class="fas fa-desktop"></i> Python</p>
-            <a href="https://github.com/joshnsw/Data-Science-Analysis-projects/tree/main/Funding%20Prediction%20model" target="_blank">View Project</a>
+            <a href="https://github.com/joshnsw/Data-Science-Analysis-projects/tree/main/Funding%20Prediction%20model" target="_blank">Github</a>
+
           </div>
         </div>
+
+
+    </div>
+
+    <div class="row p-4 d-flex">
+
+      <div class="col">
+        <div class="card card-format p-3">
+          <span><b>ProMGR</b></span>
+          <p> A dashboard app that enables managers to streamline team management workflow.</p>
+          <p><i class="fas fa-desktop"></i>Figma,Ruby on Rails,MySQL</p>
+          <a href="https://github.com/Luciensands/promgr" target="_blank">Github</a>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-format p-3">
+          <span><b>Just Survive</b></span>
+          <p> A consumer app that allows users to host and book survival experiences around the world.</p>
+          <p><i class="fas fa-desktop"></i>Figma,Ruby on Rails,MySQL</p>
+          <a href="https://survivalexperience.herokuapp.com/" target="_blank">Project</a>
+          <a href="https://github.com/joshnsw/Data-Science-Analysis-projects/tree/main/Funding%20Prediction%20model" target="_blank">Github</a>
+
+        </div>
+      </div>
 
     </div>
 
@@ -109,13 +140,13 @@
 </section>
 
 
-<section class="third-section mt-5 mb-5">
+<section class="third-section mt-5 mb-5" id="about">
 
-  <div class="container bg-light rounded">
+  <div class="container text-center rounded text-white ">
     <h1>About</h1>
     <div class="row p-4">
       <div class="col">
-        <div class="card card-about">
+        <div class="card card-about mb-2">
           <img src="assets/le wagon.jpeg" style="height:100%; width:100%;">
         </div>
 
@@ -124,14 +155,14 @@
       </div>
 
       <div class="col">
-        <div class="card card-about">
+        <div class="card card-about mb-2">
           <img src="assets/phovietnam.jpg" style="height:100%; width:100%;" >
         </div>
         <p> I love traveling and food. I went to Vietnam last year and it was a blast!</p>
       </div>
 
       <div class="col">
-        <div class="card card-about">
+        <div class="card card-about mb-2">
           <img src="assets/jiujitsuprofile.jpg"  style="height:100%; width:100%;">
         </div>
         <p>Learning jiu-jutsu has enabled me to become stronger mentally and physically. I have been doing it for 3 years, taking a break this year to focus on coding.</p>

@@ -1,16 +1,16 @@
-.decoration-nav {
 
-
-  background: white;
-
-  text-decoration: none;
-  color: black;
-
-}
 
 .decoration-nav > *{
 
   text-decoration: none;
-  color: black;
+  color:white;
+
+
+}
+
+
+nav > a{
+
+  margin-right: 1em;
 
 }
