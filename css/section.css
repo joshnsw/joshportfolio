@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Overpass:wght@100;400&display=swap');
+
 .first-section{
 
   margin-top: 3em;
   height:300;
+  z-index: 1;
+}
+
+.third-section{
+
+  background:rgba(0, 0, 0, 0.514);
+  transform: skewY(-8deg);
+
+
+}
+.inner-third-section{
+  transform: skewY(8deg);
+  padding: 100px;
+}
+
+.hero-content{
+
+
+
+  font-size: 20px;
+
+
+
+}
+
+.hero-content > p {
+
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+
+  transform: skewX(-20deg);
+
 }

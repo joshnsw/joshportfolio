@@ -5,19 +5,124 @@
 
 @import "cards.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500&family=Gloock&family=Lora:ital,wght@0,400;0,500;1,400&family=Merriweather:wght@300;400&family=Roboto:wght@400;700;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Overpass:wght@100;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 
+
+
 body{
 
   background: #141E30;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-font-family: 'Roboto', serif;
+background-color: rgb(37, 43, 75);;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Orbitron', sans-serif;
 font-weight: 400;
 font-size: 1.5em;
+}
+
+.profile{
+
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+.sharingan{
+
+  animation: rotation 2s infinite linear;
+}
+
+.header{
+  clip-path: polygon(0% 0%, 100% 0%, 94% 100%, 0% 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 54.5%;
+  padding: 16px 10%;
+  background-color: #f3eaea;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+}
+
+.header > a{
+  color:black;
+ text-decoration: none;
+}
+
+.logos{
+  overflow: hidden;
+ padding: 60px 0;
+ white-space: nowrap;
+ animation-play-state: running;
+ position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 2.5s slide infinite linear;
+}
+
+
+
+.logos-slide img {
+
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+
+@keyframes slide {
+
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
