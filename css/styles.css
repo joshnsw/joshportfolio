@@ -35,7 +35,7 @@ font-size: 1.5em;
 
 .sharingan{
 
-  animation: rotation 2s infinite linear;
+  animation: rotation 5s infinite linear;
 }
 
 .header{
@@ -93,7 +93,7 @@ font-size: 1.5em;
 
 .logos-slide {
   display: inline-block;
-  animation: 2.5s slide infinite linear;
+  animation: 6s slide infinite linear;
 }
 
 
