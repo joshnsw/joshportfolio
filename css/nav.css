@@ -10,7 +10,13 @@
 
 
 nav > a{
-
+  transition: transform 0.2s ease;
   margin-right: 1em;
 
+}
+
+
+
+a:hover {
+  transform: scale(1.1);
 }
